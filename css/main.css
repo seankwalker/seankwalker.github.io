@@ -12,7 +12,10 @@ h1 small {
 
 .navbar.navbar-default.navbar-fixed-side img {
     max-width: 350px;
+} li {
+    border-radius: 3px;
 }
+
 
 #footer-wrapper {
     position: absolute;
