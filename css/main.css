@@ -35,3 +35,7 @@ h1 small {
     font-size: 10px;
     opacity: 0.20;
 }
+
+.thumbnail {
+    max-width: 250px;
+}
