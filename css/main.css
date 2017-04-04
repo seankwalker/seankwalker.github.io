@@ -15,27 +15,3 @@ h1 small {
 } li {
     border-radius: 3px;
 }
-
-
-#footer-wrapper {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-}
-
-#footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 10px;
-    opacity: 0.20;
-}
-
-.thumbnail {
-    max-width: 250px;
-}
