@@ -1,78 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Personal website of Sean Walker." name="description">
+    <meta content="Sean Walker" name="author">
 
     <title>Sean Walker</title>
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap -->
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Font Awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- Navbar, from http://http://www.samrayner.com/bootstrap-side-navbar/ -->
-    <link href="css/navbar-fixed-side.css" rel="stylesheet">
-    <!-- Stylesheet -->
-    <link href="css/main.css" rel="stylesheet">
-    <!-- JS -->
-    <script type="text/javascript" src="js/scripts.js"></script>
 
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-86544866-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body id="override">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-3 col-lg-2">
-                  <nav class="navbar navbar-default navbar-fixed-side">
-                      <img class="img-responsive" src="img/photo.jpg" alt="Image of Sean Walker">
-                      <ul class="nav navbar-nav">
-                          <li><a class="list-group-item" href="index.html"> <i class="fa fa-home fa-fw"></i> Homepage</a></li>
-                          <li class="list-group-item rtl"> moc.kooltuo@reklaw_naes <i class="fa fa-envelope fa-fw"></i></li>
-                          <li class="list-group-item rtl"> ude.elay@reklaw.naes <i class="fa fa-envelope fa-fw"></i></li>
-                          <li><a class="list-group-item" target="_blank" href="doc/Sean%20Walker%20Resume.pdf"> <i class="fa fa-file-text fa-fw" aria-hidden="true"></i> My resume</a></li>
-                          <li><a class="list-group-item" target="_blank" href="https://www.linkedin.com/in/seankwalker"> <i class="fa fa-linkedin fa-fw"></i> Connect with me on LinkedIn</a></li>
-                      </ul>
-                  </nav>
-              </div>
-              <div class="col-sm-9 col-lg-10">
-                  <div class="page-header">
-                      <h1>Sean Walker<small> Personal Site</small></h1>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-9 col-lg-10">
-                        <p>I am currently a sophomore Computer Science major at Yale University.</p>
-                        <p>I have previous development experience with Android (Java), Python (and Flask), web development (incl. HTML, CSS, JQuery) and C.</p>
-                        <p>I will be working with Harvard's CS50 for the summer of 2017. My interests range from software engineering to web devlopment to education to security and technology-related legal research or study.</p>
-                      </div>
-                 </div>
-                 <div class="row">
-                     <div class="col-sm-9 col-lg-10">
-                         <p>At Yale, I work as an Android Developer for the Yale Student Technology Collaborative (STC). I also work with the <a href="http://yalecompsociety.org/">Yale Computer Society</a>, an undergraduate organization which aims to improve the environment for computer science students at Yale, the <a href="http://yalerumpus.com/">Yale Rumpus</a>, a humor magazine revolving around campus events, and have previously written for the Yale Daily News.</p>
-                         <p>Outside of academics, I enjoy skiing and mountaing climbing in my home state of Colorado. I'm also a fitness enthusiast and avid reader.</p>
-                         <p>I'm a proud member of the ᏣᎳᎩᎯ ᎠᏰᎵ, Cherokee Nation of Oklahoma. At Yale, I am active in the Native American Cultural Center, where I take Cherokee language classes. Additionally, I am involved with the Association of Native Americans at Yale (ANAAY), a Native activist group on campus.</p>
+<body>
+    <div class="container-fluid text-center">
+        <img id="me" src="img/me.png">
+        <h1 class="caption" id="heading-name">Sean Walker</h1>
+    </div>
+    <div class="container">
+        <div class="text-left align-middle">
+                <ul class="nav nav-tabs nav-justified" id="tabs">
+                    <li class="active" id="about-tab"><a data-toggle="tab" href="#about">About</a></li>
+                    <li id="portfolio-tab"><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
+                    <li id="resume-tab"><a data-toggle="tab" href="#resume">Resume</a></li>
+                </ul>
+                <div class="container">
+                    <div class="tab-content">
+                        <!-- About Me -->
+                        <div id="about" class="tab-pane active text-left">
+                            <h2>About Me</h2>
+                            <p>My name is Sean Walker. I'm currently a junior at Yale, where I'm majoring in
+                            Computer Science (B.S.).</p>
+                            <p>I spent last summer working at CS50 in Cambridge, MA, where I worked on developing reference resources, new problems and problem sets, curriculum development, and the like.</p>
+                            <p>At Yale, I work in the fall as a Teaching Assistant for <a href="https://cs50.yale.edu/" target="_blank">CPSC 100</a>, a.k.a CS50. In the spring, I work as an Android developer/DevOps specialist for <a href="http://yalestc.github.io/" target="_blank">Yale SDMP</a>.</p>
+                            <p>My academic interests include:
+                                <ul>
+                                    <li>systems programming</li>
+                                    <li>app development</li>
+                                    <li>security, privacy, law</li>
+                                    <li>political philosophy</li>
+                                </ul>
+                            </p>
+                            <p>Outside of class and work, I enjoy skiing, reading, music production, languages, and fitness. My favorite authors are Murakami and Hemingway, and my favorite artists are Title Fight and WINNER. I speak French proficiently, and Cherokee at an elementary level.</p>
+                            <h3>Contact Information</h3>
+                            <ul id="contact">
+                                <li>Email: <span class="rtl">moc.kooltuo@reklaw_naes</span> | <span class="rtl">ude.elay@reklaw.naes</span></li>
+                                <li><a href="https://www.linkedin.com/in/seankwalker/" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://github.com/sean-walker" target="_blank">GitHub</a></li>
+                            </ul>
+                        </div>
+                        <!-- Portfolio -->
+                        <div id="portfolio" class="tab-pane text-left">
+                            <h2>Portfolio</h2>
+                            <h3>Projects</h3>
+                            <ul>
+                                <li>Yale Mobile App (Android)</li>
+                                <li><a href="https://reference.cs50.net" target="_blank">reference50</a></li>
+                                <li><a href="https://is-america-great-yet.herokuapp.com/" target="_blank">Is America Great Yet?</a></li>
+                                <li><a href="https://legal-gibberish-generator.herokuapp.com/" target="_blank">Legal Gibberish Generator</a></li>
+                            </ul>
+                            <p><small>You can also check my <a href="https://github.com/sean-walker" target="_blank">Github</a> for code (where available) and more of my work.</small></p>
+                            <h3>Courses Taught</h3>
+                            <ul>
+                                <li>CPSC 100 (Yale)</li>
+                                <li>CSCI P-14300 (Harvard Summer School)</li>
+                            </ul>
+                            <h3>Courses Taken</h3>
+                            <h4>Concentration</h4>
+                            <ul>
+                                <li>CPSC 477: Natural Language Processing</li>
+                                <li>CPSC 223: Data Structures and Programming Techniques</li>
+                                <li>CPSC 201: Introduction to Computer Science</li>
+                                <li>CPSC 185: Control, Privacy, and  Technology</li>
+                                <li>CPSC 183: Law, Technology, and Culture</li>
+                                <li>CPSC 100: Introduction to Computing and Programming</li>
+                            </ul>
+                            <h4>Electives</h4>
+                            <ul>
+                                <li>FREN 130: Intermediate &amp Advanced French I</li>
+                                <li>FREN 140: Intermediate &amp Advanced French II</li>
+                                <li>PHYS 200: Fundamentals of Physics I</li>
+                                <li>PHYS 181: University Physics II</li>
+                                <li>MATH 120: Multivariable Calculus</li>
+                                <li>ECON 115: Introductory Microeconomics</li>
+                                <li>ECON 111: Introduction to Macroeconomic Analysis</li>
+                                <li>PLSC 114: Introduction to Political Philosophy</li>
+                                <li>HIST 271: Intellectual History Since Nietzsche</li>
+                                <li>PHIL 175: Introduction to Ethics</li>
+                                <li>ENGL 017: Shakespeare's Major Tragedies</li>
+                            </ul>
+                        </div>
+                        <!-- Resume -->
+                        <div id="resume" class="tab-pane text-center">
+                            <object data="doc/resume.pdf" id="resume-content" width="70%" height="1000px" type="application/pdf">
+                                <p class="resume-content">Error displaying PDF; try <a href="doc/resume.pdf">this link</a> instead.</p>
+                            </object>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-  </body>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>
