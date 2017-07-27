@@ -1,5 +1,5 @@
-// when resume loads, autoscroll to bottom of page
-$('#resume-tab').click(function() {
+// when new tab clicked, autoscroll to bottom of page to fit all content
+$('#tabs li').click(function() {
     $('html, body').animate({
         scrollTop: $(document).height()
     }, 1250);
