@@ -1,5 +1,5 @@
-// when new tab clicked, autoscroll to bottom of page to fit all content
-$('#tabs li').click(function() {
+// when resume tab clicked, autoscroll to bottom of page to fit all content
+$('#resume-tab').click(function() {
     $('html, body').animate({
         scrollTop: $(document).height()
     }, 1250);
