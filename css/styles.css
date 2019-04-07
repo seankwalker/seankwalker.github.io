@@ -24,11 +24,6 @@ p, li {
     font-size: 18px;
 }
 
-.rtl {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-}
-
 /* default value so it can be changed in scripts */
 #about {
     opacity: 1;
