@@ -1,70 +1,7 @@
 body {
-    /* `!important` tag prevents overwriting font family */
-    font-family: 'Slabo 27px', serif !important;
-    background-color: #FFF !important;
+  background-color: #205e72;
 }
 
-img {
-    opacity: 1;
-    max-width: 15%;
-    max-height: 15%;
-    border-radius: 50%;
-    -moz-transition: all .15s ease-in;
-    -o-transition: all .15s ease-in;
-    -webkit-transition: all .15s ease-in;
-    transition: all .15s ease-in;
-}
-
-img:hover {
-    opacity: .9;
-    transform: scale(1.05, 1.05);
-}
-
-p, li {
-    font-size: 18px;
-}
-
-/* default value so it can be changed in scripts */
-#about {
-    opacity: 1;
-}
-
-#contact {
-    list-style-type: none;
-}
-
-#heading-name {
-    -moz-transition: all .1s ease-in;
-    -o-transition: all .1s ease-in;
-    -webkit-transition: all .1s ease-in;
-    transition: all .1s ease-in;
-}
-
-#heading-name:hover {
-    color: #1919a0;
-}
-
-#me {
-    margin-top: 20px;
-}
-
-/* default values so they can be changed in scripts */
-#portfolio, #resume {
-    opacity: 0;
-}
-
-#resume-content {
-    margin-top: 20px;
-}
-
-#tabs>li {
-    min-width: 320px;
-}
-
-#tabs>li>a {
-    color: #777;
-}
-
-#tabs>li>a:hover {
-    color: #1919a0;
+p {
+  color: #f2fff6;
 }
