@@ -23,6 +23,12 @@ const CONTENT = [
   },
 ];
 
+const updateSelectedDisplay = () =>
+  CONTENT.forEach(({ title, body }) => {
+    const sectionIsSelected = $(`#${TITLE_ID}`).html() === title;
+    $(`#${SECTION_ID_STUB}${title}`).css("text-decoration", sectionIsSelected ? "underline" : "none");
+  });
+
 const createClickHandlerForSection = ({ title, body }) => (event) => {
   const sectionIsSelected = $(`#${TITLE_ID}`).html() === title;
   const newTitle = sectionIsSelected ? "" : title;
@@ -30,7 +36,8 @@ const createClickHandlerForSection = ({ title, body }) => (event) => {
 
   $(`#${TITLE_ID}`).html(newTitle);
   $(`#${BODY_ID}`).html(newBody);
-  $(`#${SECTION_ID_STUB}${title}`).css("text-decoration", sectionIsSelected ? "none" : "underline");
+
+  updateSelectedDisplay();
 };
 
 CONTENT.forEach((contentSpec) =>
