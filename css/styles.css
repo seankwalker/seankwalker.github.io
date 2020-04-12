@@ -40,6 +40,14 @@ li {
   padding: 0;
 }
 
+#links li {
+  text-decoration: none;
+}
+
+#links li:hover {
+  text-decoration: underline;
+}
+
 #main {
   /* flexbox */
   display: flex;
