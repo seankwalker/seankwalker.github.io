@@ -1,7 +1,54 @@
-body {
-  background-color: #205e72;
+:root {
+  --bg-color: #205e72;
+  --text-color: #f2fff6;
 }
 
-p {
+body {
+  background-color: var(--bg-color);
   color: #f2fff6;
+  font-family: "PT Mono", monospace;
+}
+
+li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+#content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#front-matter {
+  border-right: 2px solid var(--text-color);
+  padding-right: 40px;
+}
+
+#links {
+  border-right: 2px solid var(--text-color);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  /* layout */
+  margin: auto;
+  height: 100vh;
+  width: 50%;
 }
