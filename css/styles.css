@@ -3,9 +3,17 @@
     --text-color: #f2fff6;
 }
 
+a {
+    color: var(--text-color);
+}
+
+a :clicked {
+    color: var(--text-color);
+}
+
 body {
     background-color: var(--bg-color);
-    color: #f2fff6;
+    color: var(--text-color);
     font-family: "PT Mono", monospace;
     font-size: 20px;
 }

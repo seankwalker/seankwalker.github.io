@@ -13,12 +13,18 @@ const CONTENT = [
     {
         id: `${SECTION_ID_STUB}about`,
         title: "about",
-        body: "",
+        body: "bay area-based software engineer",
     },
     {
         id: `${SECTION_ID_STUB}portfolio`,
         title: "portfolio",
         body: "under construction",
+    },
+    {
+        id: `${SECTION_ID_STUB}contact`,
+        title: "contact",
+        body:
+            "please reach out to me via <a href='https://linkedin.com/in/seankwalker/' target='_new'>LinkedIn</a>",
     },
 ];
 
