@@ -12,23 +12,12 @@ const CONTENT = [
     {
         id: `${SECTION_ID_STUB}about`,
         title: "about",
-        body:
-            "Bacon ipsum dolor amet rump fatback sirloin pork. Picanha tenderloin frankfurter tri-tip capicola turducken alcatra. Beef kevin shank, beef ribs doner ham hock prosciutto tongue venison chicken meatloaf filet mignon landjaeger. Corned beef chuck spare ribs kielbasa buffalo salami pastrami prosciutto venison cow beef chicken.",
-        multipage: false,
+        body: "",
     },
     {
         id: `${SECTION_ID_STUB}portfolio`,
         title: "portfolio",
-        body:
-            "since june 2019, i've worked as a fullstack engineer at snackpass (yc w18). snackpass offers convenient, discounted food ordering (delivery, pickup, and dine-in) for customers and powerful analytics, marketing, and other business tools to our restaurant partners. i primarily focus on our partner-facing products, including a point-of-sale (pos) iOS app, an in-store self order kiosk, and various internal tools and dashboards.",
-        multipage: true,
-        pages: [{}],
-    },
-    {
-        id: `${SECTION_ID_STUB}resume`,
-        title: "resume",
-        body: "indev",
-        multipage: false,
+        body: "under construction",
     },
 ];
 
@@ -41,22 +30,17 @@ const updateSelectedDisplay = () =>
         );
     });
 
-const createClickHandlerForSection = ({ title, body, multipage }) => (
-    event
-) => {
+const createClickHandlerForSection = ({ title, body, multipage }) => _event => {
     const sectionIsSelected = $(TITLE_ID).html() === title;
     const newTitle = sectionIsSelected ? "" : title;
     const newBody = sectionIsSelected ? "" : body;
-    const newMultipage = !sectionIsSelected && multipage;
 
     $(TITLE_ID).html(newTitle);
     $(BODY_ID).html(newBody);
 
-    newMultipage ? $(NAV_ID).show() : $(NAV_ID).hide();
-
     updateSelectedDisplay();
 };
 
-CONTENT.forEach((contentSpec) =>
+CONTENT.forEach(contentSpec =>
     $(contentSpec.id).on("click", createClickHandlerForSection(contentSpec))
 );
