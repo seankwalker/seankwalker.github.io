@@ -1,64 +1,79 @@
 :root {
-  --bg-color: #205e72;
-  --text-color: #f2fff6;
+    --bg-color: #205e72;
+    --text-color: #f2fff6;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: #f2fff6;
-  font-family: "PT Mono", monospace;
-  font-size: 20px;
+    background-color: var(--bg-color);
+    color: #f2fff6;
+    font-family: "PT Mono", monospace;
+    font-size: 20px;
 }
 
 li {
-  padding-bottom: 10px;
-  padding-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .header {
-  font-weight: bold;
-  white-space: nowrap;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 #content {
-  padding-left: 40px;
-  padding-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #front-matter {
-  border-right: 2px solid var(--text-color);
-  padding-right: 40px;
+    border-right: 2px solid var(--text-color);
+    padding-right: 40px;
 }
 
 #links {
-  border-right: 2px solid var(--text-color);
-  padding-left: 40px;
-  padding-right: 40px;
+    border-right: 2px solid var(--text-color);
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #links li {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #links li:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #main {
-  /* flexbox */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
-  /* layout */
-  margin: auto;
-  height: 100vh;
-  width: 50%;
+    /* layout */
+    margin: auto;
+    height: 100vh;
+    width: 50%;
+}
+
+#section-pages-nav {
+    display: none;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--text-color);
+    text-align: center;
+    font-size: 16px;
+}
+
+#section-pages-nav-left {
+    margin-right: 120px;
 }
