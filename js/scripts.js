@@ -7,8 +7,6 @@ const BODY_ID = "#section-body";
 
 const SECTION_ID_STUB = "#section-selector-";
 
-// content for sections
-// CSS ID can be constructed from "section-selector-" + section title
 const CONTENT = [
     {
         id: `${SECTION_ID_STUB}about`,

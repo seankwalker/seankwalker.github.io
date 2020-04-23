@@ -73,18 +73,3 @@ li {
     height: 100vh;
     width: 50%;
 }
-
-#section-pages-nav {
-    display: none;
-    margin-top: 60px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 20px;
-    border-top: 1px solid var(--text-color);
-    text-align: center;
-    font-size: 16px;
-}
-
-#section-pages-nav-left {
-    margin-right: 120px;
-}
