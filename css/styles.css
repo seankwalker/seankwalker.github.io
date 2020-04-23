@@ -20,6 +20,10 @@ li {
     white-space: nowrap;
 }
 
+.right-border {
+    border-right: 2px solid var(--text-color);
+}
+
 #content {
     padding-left: 40px;
     padding-right: 40px;
@@ -31,15 +35,8 @@ li {
 }
 
 #links {
-    border-right: 2px solid var(--text-color);
     padding-left: 40px;
     padding-right: 40px;
-}
-
-#links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 #links li {
@@ -48,6 +45,12 @@ li {
 
 #links li:hover {
     text-decoration: underline;
+}
+
+#links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #main {

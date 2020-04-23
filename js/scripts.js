@@ -1,8 +1,9 @@
 "use strict";
 
+const LINKS_ID = "#links";
+
 const TITLE_ID = "#section-title";
 const BODY_ID = "#section-body";
-const NAV_ID = "#section-pages-nav";
 
 const SECTION_ID_STUB = "#section-selector-";
 
@@ -21,7 +22,7 @@ const CONTENT = [
     },
 ];
 
-const updateSelectedDisplay = () =>
+const updateSelectedDisplay = () => {
     CONTENT.forEach(({ title, body }) => {
         const sectionIsSelected = $(TITLE_ID).html() === title;
         $(`${SECTION_ID_STUB}${title}`).css(
@@ -29,6 +30,11 @@ const updateSelectedDisplay = () =>
             sectionIsSelected ? "underline" : "none"
         );
     });
+
+    CONTENT.filter(({ title }) => $(TITLE_ID).html() === title).length === 0
+        ? $(LINKS_ID).removeClass("right-border")
+        : $(LINKS_ID).addClass("right-border");
+};
 
 const createClickHandlerForSection = ({ title, body, multipage }) => _event => {
     const sectionIsSelected = $(TITLE_ID).html() === title;
