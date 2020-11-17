@@ -20,21 +20,16 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: "PT Mono", monospace;
-    font-size: 20px;
+    font-size: 1.1vmax;
 }
 
 br {
-    margin-bottom: 0.4em;
-}
-
-div {
-    margin: auto;
-    width: 50%;
+    margin-bottom: 0.5vmax;
 }
 
 .tab {
     display: inline-block;
-    margin-left: 2rem;
+    margin-left: 1.5vmax;
 }
 
 .object {
