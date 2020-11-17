@@ -1,14 +1,19 @@
 :root {
-    --bg-color: #205e72;
-    --text-color: #f2fff6;
+    --bg-color: #2a2b30;
+    --text-color: #ffffff;
 }
 
 a {
     color: var(--text-color);
+    text-decoration: none;
 }
 
 a :clicked {
     color: var(--text-color);
+}
+
+a :hover {
+    text-decoration: underline;
 }
 
 body {
@@ -18,58 +23,41 @@ body {
     font-size: 20px;
 }
 
-li {
-    padding-bottom: 10px;
-    padding-top: 10px;
+br {
+    margin-bottom: 0.4em;
 }
 
-.header {
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.right-border {
-    border-right: 2px solid var(--text-color);
-}
-
-#content {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-#front-matter {
-    border-right: 2px solid var(--text-color);
-    padding-right: 40px;
-}
-
-#links {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-#links li {
-    text-decoration: none;
-}
-
-#links li:hover {
-    text-decoration: underline;
-}
-
-#links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#main {
-    /* flexbox */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    /* layout */
+div {
     margin: auto;
-    height: 100vh;
     width: 50%;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.object {
+    font-weight: bold;
+    color: #85b1e0;
+}
+
+.key {
+    font-weight: bold;
+    color: #8e8ecc;
+}
+
+.string {
+    font-weight: bold;
+    color: #dda2f6;
+}
+
+.list {
+    font-weight: bold;
+    color: #85b1e0;
+}
+
+.boolean {
+    font-weight: bold;
+    color: #dda2f6;
 }
